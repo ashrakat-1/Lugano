@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منيو كافيه وحجز مواعيد</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>منيو كافيه lugano</h1>
+        <nav>
+            <ul>
+                <li><a href="#المشروبات">المشروبات</a></li>
+                <li><a href="#الوجبات">الوجبات</a></li>
+                <li><a href="#الحلويات">الحلويات</a></li>
+                <li><a href="#حجز">حجز موعد</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="المشروبات">
+        <h2>المشروبات</h2>
+        <div class="menu-item">
+            <h3>قهوة</h3>
+            <p>قهوة مع حليب وكراميل</p>
+            <span class="price">50 LE</span>
+        </div>
+        <div class="menu-item">
+            <h3>شاي</h3>
+            <p>شاي أخضر مع نعناع</p>
+            <span class="price">20 LE</span>
+        </div>
+    </section>
+
+    <section id="الوجبات">
+        <h2>الوجبات</h2>
+        <div class="menu-item">
+            <h3>ساندويتش دجاج</h3>
+            <p>ساندويتش دجاج مع صوص خاص</p>
+            <span class="price">150 LE</span>
+        </div>
+        <div class="menu-item">
+            <h3>برجر</h3>
+            <p>برجر لحم مع خبز طازج</p>
+            <span class="price">200 LE</span>
+        </div>
+    </section>
+
+    <section id="الحلويات">
+        <h2>الحلويات</h2>
+        <div class="menu-item">
+            <h3>كعكة شوكولاتة</h3>
+            <p>كعكة شوكولاتة غنية مع كريمة</p>
+            <span class="price">80 LE</span>
+        </div>
+        <div class="menu-item">
+            <h3>مفروكة</h3>
+            <p>حلويات مفروكة مع فواكه موسمية</p>
+            <span class="price">95 LE</span>
+        </div>
+    </section>
+
+    <section id="حجز">
+        <h2>حجز موعد</h2>
+        <form id="booking-form">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">التاريخ والوقت:</label>
+            <input type="datetime-local" id="date" name="date" required>
+
+            <button type="submit">حجز</button>
+        </form>
+        <p id="confirmation-message"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 كافيه lugano</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
